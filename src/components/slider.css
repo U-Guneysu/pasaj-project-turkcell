@@ -1,0 +1,67 @@
+#customSlider {
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 16px;
+    scale: 0.9;
+    transform-origin: top center;
+    position: relative;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#customSlider:hover .carousel-control-next,
+#customSlider:hover .carousel-control-prev {
+    opacity: 1;
+}
+
+.carousel-control-next-icon{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(25%, -25%);
+}
+
+.carousel-control-prev-icon{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-25%, -25%);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+    background-color: white;
+    border-radius: 50%;
+    padding: 20px;
+    background-size: 80% 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-next-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%232855ac'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3' /%3E%3C/svg%3E");
+    width: 2rem;
+    height: 2rem;
+}
+
+.custom-previous-icon {
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%221.5%22%20stroke%3D%22%232855ac%22%3E%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20d%3D%22M10.5%2019.5%203%2012m0%200%207.5-7.5M3%2012h18%22%2F%3E%3C%2Fsvg%3E");
+    width: 24px;
+    width: 2rem;
+    height: 2rem;
+}
+
+.carousel-indicators .active {
+    background-color: #ffcb09;
+}
+
+.carousel-indicators, button{
+    bottom: -5px;
+}
+/* SLIDER KÖŞE YUMUŞATMALARI VE BOYUTLANDIRMADA KALDIM*/
