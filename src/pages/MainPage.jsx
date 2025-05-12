@@ -194,7 +194,6 @@ export default function MainPage() {
           </div>
         </div>
       </main>
-      {/*Slider Kısmı*/ }
     </>
   );
 }

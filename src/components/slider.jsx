@@ -1,4 +1,4 @@
-import React from "react";
+import { sliderData } from "../data/sliderData";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./slider.css";
@@ -7,83 +7,46 @@ const Slider = () => {
   return (
     <div
       id="customSlider"
-      className="carousel slide mt-6"
+      className="carousel slide mt-6 position-relative"
       data-bs-ride="carousel"
       data-bs-touch="true"
     >
+      {/* Slide Items */}
+      <div className="carousel-inner">
+        {sliderData.map((slide, index) => (
+          <div
+            className={`carousel-item ${index === 0 ? "active" : ""}`}
+            key={slide.id}
+          >
+            <img
+              src={slide.image}
+              className="d-block w-100"
+              alt={slide.title}
+            />
+            <div className="carousel-caption d-none d-md-block">
+              <h5 style={{ color: "red" }}>{slide.title}</h5>
+              <p style={{ color: "red" }}>{slide.description}</p>
+              <button className="btn btn-primary">İncele</button>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Indicators */}
       <div className="carousel-indicators custom-slider-btn">
-        <button
-          type="button"
-          data-bs-target="#customSlider"
-          data-bs-slide-to="0"
-          className="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#customSlider"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#customSlider"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#customSlider"
-          data-bs-slide-to="3"
-          aria-label="Slide 4"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#customSlider"
-          data-bs-slide-to="4"
-          aria-label="Slide 5"
-        ></button>
+        {sliderData.map((_, index) => (
+          <button
+            key={index}
+            type="button"
+            data-bs-target="#customSlider"
+            data-bs-slide-to={index}
+            className={index === 0 ? "active" : ""}
+            aria-label={`Slide ${index + 1}`}
+          ></button>
+        ))}
       </div>
 
-      <div className="carousel-inner custom-slider-img">
-        <div className="carousel-item active">
-          <img
-            src="https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/Banner/Standart/Pasaj/r1-a26nb-pasaj-hero.jpg?1746873785000"
-            className="d-block w-100"
-            alt="Samsung Side 1"
-          />
-        </div>
-        <div className="carousel-item custom-slider-img">
-          <img
-            src="https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/Banner/Standart/Pasaj/MarkaGunleri-anneler-gunu-B-hero-banner-web.jpg?1746010495000"
-            className="d-block w-100"
-            alt="Anneler Gunu Side 2"
-          />
-        </div>
-        <div className="carousel-item custom-slider-img">
-          <img
-            src="https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/Banner/Standart/Pasaj/anneler-Gunu-Platinum-hero-banner-web.jpg?1746009674000"
-            className="d-block w-100"
-            alt="Apple Watch Side 3"
-          />
-        </div>
-        <div className="carousel-item custom-slider-img">
-          <img
-            src="https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/Banner/Standart/Pasaj/16promass-pasaj-hero.jpg?1746599491000"
-            className="d-block w-100"
-            alt="Pesin Fiyat Side 4"
-          />
-        </div>
-        <div className="carousel-item custom-slider-img">
-          <img
-            src="https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/Banner/Standart/Pasaj/Pasaj_Fomo-hero-banner-web.jpg"
-            className="d-block w-100"
-            alt="Side 5"
-          />
-        </div>
-      </div>
-
+      {/* Navigation Buttons */}
       <button
         className="carousel-control-prev"
         type="button"

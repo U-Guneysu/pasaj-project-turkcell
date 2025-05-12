@@ -3,6 +3,7 @@ import { useLocation, BrowserRouter } from "react-router-dom";
 import useScrollingTitle from "./hooks/useScrollingTitle";
 import MainPage from "./pages/MainPage";
 import Slider from "./components/slider";
+import Category from "./components/categories";
 
 function App() {
   const location = useLocation();
@@ -21,6 +22,7 @@ function App() {
     <>
       <MainPage />
       <Slider />
+      <Category />
     </>
   );
 }

@@ -1,0 +1,45 @@
+.category-container {
+    max-width: 1310px;
+    margin: 0 auto; /* Ortalamak için */
+    padding: 0 15px; /* Genel hizalama için */
+  }
+  
+  .category-container .flex {
+    display: flex;
+    flex-wrap: nowrap; /* Kategorilerin hepsinin yan yana gelmesini sağlar */
+    justify-content: space-between; /* Kategoriler arasındaki boşlukları eşitler */
+    gap: 10px;
+  }
+  
+  .category-container .category-item {
+    background-color: #f5f5f5;
+    padding: 16px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100px; /* Kategorilerin genişliğini belirleyelim */
+    height: 100px; /* Kategorilerin yüksekliğini belirleyelim */
+  }
+  
+  .category-container .category-item:hover {
+    background-color: #e0e0e0; /* Hover efekti */
+  }
+  
+  .category-container img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+    object-fit: contain;
+  }
+  
+  .category-container span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+  }
+  
