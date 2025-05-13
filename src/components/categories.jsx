@@ -10,7 +10,7 @@ const Category = () => {
             {populerCategories.map((category) => (
               <div
                 key={category.id}
-                className="category-item"
+                className="category-item category-image-container"
               >
                 <img
                   src={category.image}

@@ -3,7 +3,7 @@ export const populerCategories = [
     id: 1,
     name: "Apple Telefonlar",
     image:
-      "https://ffo3gv1cf3ir.merlincdn.net//SiteAssets/Cihaz/pasaj/story/ceptelefonu.png?1746664227000",
+      "https://ffo3gv1cf3ir.merlincdn.net//SiteAssets/Cihaz/pasaj/story/ceptelefonu.png?1746664227000"
   },
   {
     id: 2,
