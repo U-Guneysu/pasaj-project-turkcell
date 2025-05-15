@@ -35,3 +35,93 @@ export const sliderData = [
     description: "Slider-5",
   },
 ];
+export const specialForYou = [
+  {
+    id: 1,
+    name: " Anker Soundcore Life P3İ Tws Anc Bluetooth Kablosuz Kulaklık ",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00JOCB/00JOCB-1.png",
+    price: 3419,
+    taksit_fatura: true,
+    ode_fatura: true,
+    pesin_taksit: true,
+    aninda_teslimat: false,
+  },
+  {
+    id: 2,
+    name: " Asus ROG Gladius III Oyuncu Mouse ",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/Cihaz/aksesuar/asus/rog-gladius-iii-oyuncu-mouse/cg/1.png",
+    price: 2299,
+    taksit_fatura: false,
+    ode_fatura: false,
+    pesin_taksit: false,
+    aninda_teslimat: true,
+  },
+  {
+    id: 3,
+    name: " Shaza Air7 Gürültü Azaltma ENC 4 Mikrofonlu Bluetooth 5.3 TWS Kulaklık ",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00ERG8/20245201258-00ERG8-1.png",
+    price: 799,
+    taksit_fatura: true,
+    ode_fatura: true,
+    pesin_taksit: true,
+    aninda_teslimat: false,
+  },
+  {
+    id: 4,
+    name: " Powertec Tr-801 Fön Makinesi ",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00NJ1I/20245131232-00NJ1I-1.png",
+    price: 689,
+    taksit_fatura: true,
+    ode_fatura: true,
+    pesin_taksit: true,
+    aninda_teslimat: false,
+  },
+  {
+    id: 5,
+    name: " Crocus 22.5w 10.000 Mah PD+QC 3.0 2 usb Type-c Micro Çıkış LCD Göstergeli Powerbank ",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00KT8S/20241126146-00KT8S-4.png",
+    price: 899,
+    taksit_fatura: true,
+    ode_fatura: true,
+    pesin_taksit: true,
+    aninda_teslimat: false,
+  },
+  {
+    id: 6,
+    name: " Google Play Hediye Kodu 250 TL ",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00F9CZ/1-1678107768950.png",
+    price: 250,
+    taksit_fatura: false,
+    ode_fatura: false,
+    pesin_taksit: false,
+    aninda_teslimat: true,
+  },
+  {
+    id: 7,
+    name: " Shaza Sesli Görüşme IP67 Nabız Ölçer 1.85 İnç Full Ekran SA8002/BK Akıllı Saat ",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00K672/20241120163-00K672-4.png",
+    price: 1399,
+    taksit_fatura: true,
+    ode_fatura: true,
+    pesin_taksit: true,
+    aninda_teslimat: false,
+  },
+  {
+    id: 8,
+    name: " Klas Dekoratif Aydınlatma Dikey Köşe Lambası Rgb Bar ",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00KGA8/00KGA8-1.png",
+    price: 649,
+    taksit_fatura: true,
+    ode_fatura: true,
+    pesin_taksit: true,
+    aninda_teslimat: false,
+  },
+];

@@ -1,0 +1,12 @@
+h2 {
+    color: #253342;
+    font-weight: 700; /* Kalınlık: 700 = bold */
+    margin-bottom: 1rem; /* mb-4 yerine */
+    font-size: 2rem;
+    padding: 20px;
+    text-align: left;  
+}
+
+.special{
+    margin-top: 50px;
+}

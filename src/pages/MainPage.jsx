@@ -1,18 +1,18 @@
 import React from "react";
-import "./main.css";
+import "../styles/main.css";
+
 
 export default function MainPage() {
   return (
     <>
-      <header>
-        {/* Container içine alınmış Header, genişlik arttırıldı */}
-        <div className="container-header">
+      <header> 
+        <div className="container-main">
           {/* Top (Üst Kısım) */}
           <div className="header-top bg-white text-white py-2">
             <div className="d-flex justify-content-between align-items-center">
-              {/* Logo */}
+             
               <div className="d-flex align-items-center">
-                {/* Turkcell İkonu */}
+               
                 <span className="turkcell-icon">
                   <img
                     src="src\assets\images\logo.png" // URL üzerinden resim ekle
@@ -23,7 +23,6 @@ export default function MainPage() {
                     }
                   />
                 </span>
-                {/* Turkcell.com Yazısı*/}
                 <a
                   href="https://www.turkcell.com.tr/"
                   className="turkcell-text text-decoration-none"
@@ -31,8 +30,7 @@ export default function MainPage() {
                   turkcell.com.tr
                 </a>
               </div>
-
-              {/* Navbar Bağlantıları */}
+              {/* Navbar */}
               <nav className="d-none d-md-flex">
                 <a href="#" className="ms-4 text-decoration-none">
                   Favorilerim
@@ -55,11 +53,9 @@ export default function MainPage() {
               </nav>
             </div>
           </div>
-
           {/* Mid (Orta Kısım) */}
           <div className="header-mid bg-white py-2">
             <div className="d-flex justify-content-between align-items-center">
-              {/* Ana Sayfa Resmi */}
               <div>
                 <a href="/">
                   <img
@@ -70,10 +66,8 @@ export default function MainPage() {
                   />
                 </a>
               </div>
-
               {/* Arama Çubuğu ve Butonlar */}
               <div className="d-flex align-items-start">
-                {/* Arama Çubuğu */}
                 <input
                   type="text"
                   placeholder="Ürün, marka veya kategori ara"
@@ -117,7 +111,6 @@ export default function MainPage() {
               </div>
             </div>
           </div>
-
           {/* Bottom (Alt Kısım) */}
           <div
             className="header-bottom bg-white py-1"

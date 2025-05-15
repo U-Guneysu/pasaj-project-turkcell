@@ -1,51 +1,54 @@
 .category-container {
-    max-width: 1310px;
+    max-width: 1200px;
     margin: 0 auto; /* Ortalamak için */
-    padding: 0 15px; /* Genel hizalama için */
   }
-  
+
   .category-container .flex {
     display: flex;
-    flex-wrap: nowrap; /* Kategorilerin hepsinin yan yana gelmesini sağlar */
-    justify-content: space-between; /* Kategoriler arasındaki boşlukları eşitler */
+    flex-wrap: wrap; /* Kategorilerin hepsinin yan yana gelmesini sağlar */
+    justify-content: center; /* Kategoriler arasındaki boşlukları eşitler */
     gap: 10px;
   }
   
   .category-container .category-item {
-    padding: 16px;
-    border-radius: 12px;
-    transition: background-color 0.3s ease;
+    width: 100px; /* Kategorilerin genişliğini belirleyelim */
+    height: 100px; /* Kategorilerin yüksekliğini belirleyelim */
+    padding: 0 10px; /* Kategorilerin iç boşluklarını ayarlayalım */
+    border-radius: 16px;
+    background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     cursor: pointer;
-    width: 100px; /* Kategorilerin genişliğini belirleyelim */
-    height: 100px; /* Kategorilerin yüksekliğini belirleyelim */
+  }
+
+  .category-container .category-item:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   }
  
   .category-container img {
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
     margin-bottom: 8px;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 50%; /* Resimleri dairesel yapar */
+    transition: transform 0.3 ease, box-shadow 0.3s ease; /* Resimlerin hover efektini artırır */
   }
 
   .category-container img:hover {
-    box-shadow: 0px 0px 10px 10px #ffcb09; /* Resimlerin hover efektini artırır */
-    transition: transform 0.3s ease;
+    box-shadow: 0px 0px 20px 6px #ffcb09; /* Resimlerin hover efektini artırır */
+    transform: scale(1.1);
   }
   
-  .category-container img:hover {
-    transform: scale(1.1); /* Resimlerin hover efektini artırır */
-  }
-
   .category-container span {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     color: #333;
     text-align: center;
+    letter-spacing: 0.3px;
   }
 
 

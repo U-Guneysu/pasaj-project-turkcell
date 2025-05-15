@@ -1,6 +1,6 @@
 #customSlider {
-    max-width: 1310px;
-    padding: 10px;
+    max-width: 1300px;
+    padding: 5px;
     margin: 0 auto;
     border-radius: 16px;
     scale: 0.9;
@@ -78,5 +78,12 @@
 .carousel-caption .btn:hover,
 .carousel-caption .btn:active {
     background-color: #e6b800;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 /* SLIDER KÖŞE YUMUŞATMALARI VE BOYUTLANDIRMADA KALDIM*/
