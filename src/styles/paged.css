@@ -1,0 +1,145 @@
+#pagedCustomSlider {
+    max-width: 1300px;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 16px;
+    scale: 0.9;
+    transform-origin: top center;
+    position: relative;
+    overflow: hidden;
+}
+
+#pagedCustomSlider .paged-carousel-inner {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.paged-carousel-control-prev,
+.paged-carousel-control-next {
+    visibility: visible;
+    pointer-events: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 1030;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: none !important;
+    cursor: pointer;
+}
+
+.paged-carousel-control-prev {
+    left: -30px;
+}
+
+.paged-carousel-control-next {
+    right: -5px;
+}
+
+.paged-carousel-control-next-icon,
+.paged-carousel-control-prev-icon {
+    position: relative;
+    transform: none;
+    border-radius: 50%;
+    padding: 20px;
+    background-size: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+}
+
+.paged-custom-next-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%232855ac'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3' /%3E%3C/svg%3E");
+}
+
+.paged-custom-previous-icon {
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%221.5%22%20stroke%3D%22%232855ac%22%3E%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20d%3D%22M10.5%2019.5%203%2012m0%200%207.5-7.5M3%2012h18%22%2F%3E%3C%2Fsvg%3E");
+}
+
+/* === CARD === */
+.paged-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* Title (max 2 satır sonrası "...") */
+.paged-card .card-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2em;
+    max-height: 2.4em;
+    margin-bottom: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Text (max 2 satır sonrası "...") */
+.paged-card .card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.3em;
+    max-height: 2.6em;
+    margin-bottom: 6px;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+/* === YILDIZ === */
+.padeg-rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 6px;
+    font-size: 0.85rem;
+}
+
+.padeg-stars {
+    display: flex;
+    gap: 2px;
+}
+
+.paged-star {
+    width: 14px;
+    height: 14px;
+    fill: #ccc;
+}
+
+.paged-star.filled {
+    fill: #f5c518;
+}
+
+/* === TAGS === */
+.product-tag {
+    background-color: #e6f0ff;
+    color: #2855ac;
+    font-size: 0.6rem;
+    font-weight: bold;
+    padding: 4px 6px;
+    border-radius: 4px;
+    white-space: normal;
+    text-align: center;
+    word-break: break-word;
+    display: inline-block;
+    max-width: 60px;
+    line-height: 1rem;
+}
+
+.product-tag span {
+    display: block;
+}

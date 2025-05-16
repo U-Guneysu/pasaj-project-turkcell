@@ -125,3 +125,53 @@ export const specialForYou = [
     aninda_teslimat: false,
   },
 ];
+export const bestOffers = [
+  {
+    id: 1,
+    name: " Samsung Galaxy A36 5G 8 GB Ram 128 GB ",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00SPZF/20253171642-00SPZF-13/20253171642-00SPZF-13_250x188.png?1746664227000",
+    price: 14899,
+    taksit_fatura: true,
+    ode_fatura: true,
+    pesin_taksit: true,
+    aninda_teslimat: false,
+    puan: 3.7
+  },
+  {
+    id: 2,
+    name: " iPhone 13 128 GB ",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00960Y/00960Y-1/00960Y-1_250x188.png?1746664227000",
+    price: 32599,
+    taksit_fatura: false,
+    ode_fatura: false,
+    pesin_taksit: false,
+    aninda_teslimat: true,
+    puan: 4.6
+  },
+  {
+    id: 3,
+    name: " Dyson Cinetic Big Ball Absolute 2 Toz Torbasız Kablolu Elektrikli Süpürge ",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/Cihaz/aksesuar/dyson/cinetic-big-ball-absolute-2/cg/1a/1a_250x188.png?1746664227000",
+    price: 15998,
+    taksit_fatura: true,
+    ode_fatura: true,
+    pesin_taksit: true,
+    aninda_teslimat: false,
+    puan: 4.7
+  },
+  {
+    id: 4,
+    name: " Sjcam SJ8 Air Aksiyon Kamerası ",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/CN/1-1660900164807/1-1660900164807_250x188.png?1746664227000",
+    price: 3999,
+    taksit_fatura: true,
+    ode_fatura: true,
+    pesin_taksit: true,
+    aninda_teslimat: false,
+    puan: 5
+  },
+];

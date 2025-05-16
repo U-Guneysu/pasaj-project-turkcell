@@ -7,7 +7,7 @@ const Category = () => {
     return (
       <div className="container-main">
         <div className="category-container">
-          <div className="px-4 sm:px-8 md:px-16 lg:px-20 xl:px-24">
+          <div className="px-3">
             <h2 className="section-title">Popüler Kategoriler</h2>
             <div className="flex flex-wrap justify-center">
               {populerCategories.map((category) => (

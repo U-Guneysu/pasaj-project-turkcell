@@ -30,8 +30,8 @@
   }
  
   .category-container img {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 8px;
     object-fit: cover;
     border-radius: 50%; /* Resimleri dairesel yapar */

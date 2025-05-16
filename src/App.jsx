@@ -5,7 +5,7 @@ import MainPage from "./pages/MainPage";
 import Slider from "./components/slider";
 import Category from "./components/categories";
 import PagedSlider from "./components/PagedSlider";
-import { specialForYou } from "./data/sliderData";
+import { bestOffers, specialForYou } from "./data/sliderData";
 
 function App() {
   const location = useLocation();
@@ -26,8 +26,7 @@ function App() {
       <Slider />
       <Category />
       <PagedSlider title="Size Özel Ürünler" products={specialForYou} />
-      <PagedSlider title="Deneme Başlığı 2" products={specialForYou} />
-      <PagedSlider title="Deneme Başlığı 3" products={specialForYou} />
+      <PagedSlider title="En İyi Teklifler" products={bestOffers} />
     </>
   );
 }
