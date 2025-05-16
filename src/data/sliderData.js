@@ -136,7 +136,9 @@ export const bestOffers = [
     ode_fatura: true,
     pesin_taksit: true,
     aninda_teslimat: false,
-    puan: 3.7
+    label: "Günün Teklifleri",
+    labelType: "gunun-firsatlari",
+    puan: 3.7,
   },
   {
     id: 2,
@@ -148,7 +150,9 @@ export const bestOffers = [
     ode_fatura: false,
     pesin_taksit: false,
     aninda_teslimat: true,
-    puan: 4.6
+    label: "Çok Satan",
+    labelType: "cok-satan",
+    puan: 4.6,
   },
   {
     id: 3,
@@ -160,7 +164,9 @@ export const bestOffers = [
     ode_fatura: true,
     pesin_taksit: true,
     aninda_teslimat: false,
-    puan: 4.7
+    label: "Peşin Fiyatına 9 Taksit",
+    labelType: "pesin-fiyatina-dokuz-taksit",
+    puan: 4.7,
   },
   {
     id: 4,
@@ -172,6 +178,6 @@ export const bestOffers = [
     ode_fatura: true,
     pesin_taksit: true,
     aninda_teslimat: false,
-    puan: 5
+    puan: 5,
   },
 ];

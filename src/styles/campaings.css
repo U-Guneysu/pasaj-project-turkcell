@@ -1,0 +1,16 @@
+.campaing-wrapper{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.campaing-wrapper img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px){
+    .campaing-wrapper{
+        flex-direction: column;
+    }
+}

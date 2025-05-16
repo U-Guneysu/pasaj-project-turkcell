@@ -60,3 +60,23 @@ export const populerCategories = [
       "https://ffo3gv1cf3ir.merlincdn.net//SiteAssets/Cihaz/pasaj/story/oyun1konsolu.png?1746664227000",
   },
 ];
+export const campaingData = [
+  {
+    id: 1,
+    name: "iPhone",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/Cihaz/pasaj/kampanya/yatay/16promass-kampanyalar-yatay-web.jpg?1746664227000",
+  },
+  {
+    id: 2,
+    name: "nespresso",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/Cihaz/pasaj/kampanya/yatay/nespressokampanyalar-yatay-web.jpg?1746664227000",
+  },
+  {
+    id: 3,
+    name: "huawei",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/Cihaz/pasaj/kampanya/dikey/fit2-kampanyalar-dikey-web.jpg?1746664227000",
+  },
+];

@@ -6,11 +6,13 @@ import Slider from "./components/slider";
 import Category from "./components/categories";
 import PagedSlider from "./components/PagedSlider";
 import { bestOffers, specialForYou } from "./data/sliderData";
+import Campaings from "./components/Campaings";
+import { campaingData } from "./data/categoryData";
 
 function App() {
   const location = useLocation();
   const isProjectPage =
-    location.pathname === "/pasaj-project-turkcell/";
+    location.pathname === "http://localhost:5173/pasaj-project-turkcell/";
 
   useScrollingTitle("Pasaj'da Anneler Günü Fırsatları! 🌸", 200, !isProjectPage);
 
@@ -27,6 +29,7 @@ function App() {
       <Category />
       <PagedSlider title="Size Özel Ürünler" products={specialForYou} />
       <PagedSlider title="En İyi Teklifler" products={bestOffers} />
+      <Campaings campaings={campaingData} />
     </>
   );
 }
