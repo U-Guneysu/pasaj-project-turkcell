@@ -181,3 +181,35 @@ export const bestOffers = [
     puan: 5,
   },
 ];
+export const pasajNew = [
+  {
+    id: 1,
+    name: "Powertec Tr-9900 Saç Ve Sakal Tıraş Makinesi",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00FETS/2025241047-00FETS-2/2025241047-00FETS-2_250x188.png?1746664227000",
+    price: 1299,
+    puan: 4.5,
+  },
+  {
+    id: 2,
+    name: "Ogi Mogi Toys 4 Düğme Kontrollü Uzay Macerası Oyun Seti",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00QRVM/20241262255-00QRVM-1/20241262255-00QRVM-1_250x188.png?1746664227000",
+    price: 877.44,
+  },
+  {
+    id: 3,
+    name: "Samsung Galaxy Tab A8 LTE SM-X207 3GB 32GB 10.5 inç Tablet",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00AM3M/1-1649182608723/1-1649182608723_250x188.png?1746664227000",
+    price: 6199,
+    puan: 3.1,
+  },
+  {
+    id: 4,
+    name: "Aladdin Fresco Thermavac 0.60 Litre",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00R9QP/2025110132-00R9QP-8/2025110132-00R9QP-8_250x188.png?1746664227000",
+    price: 649,
+  },
+];

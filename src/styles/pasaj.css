@@ -1,0 +1,26 @@
+.pasaj-section {
+    background-color: #eff2f5;
+}
+
+.pasaj-section h3{
+    font-weight: 700;
+}
+.pasaj-section p{
+    font-weight: 400;
+}
+  
+.why-pasaj-card {
+    border-radius: 12px;
+    transition: transform 0.2s;
+}
+
+.why-pasaj-card:hover {
+    transform: translateY(-5px);
+}
+  
+.why-pasaj-img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+  

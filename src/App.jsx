@@ -5,9 +5,12 @@ import MainPage from "./pages/MainPage";
 import Slider from "./components/slider";
 import Category from "./components/categories";
 import PagedSlider from "./components/PagedSlider";
-import { bestOffers, specialForYou } from "./data/sliderData";
+import { bestOffers, pasajNew, specialForYou } from "./data/sliderData";
 import Campaings from "./components/Campaings";
 import { campaingData } from "./data/categoryData";
+import CategorySwiper from "./components/CategorySwiper";
+import BrandSlider from "./components/BrandSlider";
+import Pasaj from "./components/Pasaj";
 
 function App() {
   const location = useLocation();
@@ -30,6 +33,10 @@ function App() {
       <PagedSlider title="Size Özel Ürünler" products={specialForYou} />
       <PagedSlider title="En İyi Teklifler" products={bestOffers} />
       <Campaings campaings={campaingData} />
+      <CategorySwiper />
+      <BrandSlider />
+      <PagedSlider title="Pasaj'ın Yenileri" products={pasajNew} />
+      <Pasaj />
     </>
   );
 }
