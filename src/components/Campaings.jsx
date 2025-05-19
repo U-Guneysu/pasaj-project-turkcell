@@ -7,8 +7,8 @@ const Campaings = ({ campaings = [] }) => {
     const [campaing1, campaing2, campaing3] = campaings;
 
     return (
-      <div className="container-main py-4">
-        <div className="campaings-inner px-4">
+      <div className="container-main py-3">
+        <div className="campaings-inner px-3">
           <h2 className="section-title">Kampanyalar</h2>
           <div className="row campaings-wrapper">
             <div className="col-md-8 d-flex flex-column gap-3">

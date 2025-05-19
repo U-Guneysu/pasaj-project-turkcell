@@ -38,11 +38,17 @@
     filter: brightness(0); /* Görseli siyaha çevirir */
     transition: filter 0.3s ease;
   }
+
   
   .category-button:hover .category-name {
     color: #002e5f;
     transition: color 0.3s ease;
     font-weight: bold;
+  }
+  .category-button:focus .category-image {
+    filter: brightness(0);
+    transition: filter 0.2s ease;
+    outline: none; /* İstersen odak çizgisini kaldırabilirsin */
   }
 
   .category-name {

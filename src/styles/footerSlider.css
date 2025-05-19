@@ -1,0 +1,111 @@
+.dark-container-footer {
+    background-color: #263170;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    font-size: 14px;
+  }
+  
+  /* Slider wrapper */
+  .brand-slider-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+    padding: 0 20px;
+  }
+  
+  /* Marka slider alanı (scrollable) */
+  .brand-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+    flex-grow: 1;
+  }
+  
+  .brand-slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Her bir marka slide */
+  .brand-slide {
+    flex: 0 0 auto;
+    width: 120px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 4px rgba(255, 204, 0, 0.3);
+  }
+  
+  .brand-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+  }
+  
+  .brand-slide:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 12px #ffcc00;
+  }
+  
+  /* Footer alt metin alanı */
+  .footer-privacy-text {
+    text-align: left;
+    color: #ccc;
+    padding: 20px 20px 0 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    user-select: none;
+  }
+  
+  /* Footer alt bilgi alanı */
+  .footer-bottom-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 500;
+    border-top: 1px solid #3a3f75;
+    user-select: none;
+  }
+  
+  /* Sağdaki ikon ve yazılar */
+  .footer-right-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .footer-icon {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  /* Telif hakkı yazısı */
+  .footer-copyright {
+    white-space: nowrap;
+    user-select: none;
+  }
+  
+  /* Footer bölüm padding */
+  .footer-section {
+    padding-top: 30px;
+    margin: 0;
+  }
+

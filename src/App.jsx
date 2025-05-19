@@ -11,6 +11,7 @@ import { campaingData } from "./data/categoryData";
 import CategorySwiper from "./components/CategorySwiper";
 import BrandSlider from "./components/BrandSlider";
 import Pasaj from "./components/Pasaj";
+import Footer from "./components/Footer";
 
 function App() {
   const location = useLocation();
@@ -37,6 +38,7 @@ function App() {
       <BrandSlider />
       <PagedSlider title="Pasaj'ın Yenileri" products={pasajNew} />
       <Pasaj />
+      <Footer />
     </>
   );
 }

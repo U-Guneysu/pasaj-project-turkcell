@@ -2,11 +2,10 @@
     position: relative;
     width: 100%;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     overflow: hidden;
-    padding: 1rem 2rem;
   }
   
   .brand-slider {
@@ -41,7 +40,7 @@
   }
   
   .scroll-button {
-    background-color: #fff;
+    background-color: transparent;
     border: none;
     font-size: 2rem;
     padding: 0 0.5rem;

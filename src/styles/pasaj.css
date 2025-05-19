@@ -1,5 +1,6 @@
 .pasaj-section {
     background-color: #eff2f5;
+    cursor: pointer;
 }
 
 .pasaj-section h3{
@@ -22,5 +23,12 @@
     width: 64px;
     height: 64px;
     object-fit: contain;
+}
+.icon-pictogram {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%; /* yuvarlak */
+    background-color: #27356f; /* açık gri arka plan */
+    display: flex;
 }
   

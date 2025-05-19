@@ -27,8 +27,8 @@ const PagedSlider = ({ title, products = [] }) => {
   };
 
   return (
-    <div className="container-main py-4">
-      <div className="paged-inner px-4">
+    <div className="container-main py-3">
+      <div className="paged-inner px-3">
         {/* Slider Başlığı */}
         <h2 className="section-title">{title}</h2>
 
