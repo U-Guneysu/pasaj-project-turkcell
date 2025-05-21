@@ -1,0 +1,61 @@
+.d-flex {
+    display: flex !important;
+  }
+  
+  .align-items-center {
+    align-items: center !important;
+}
+  
+.gap-2 {
+    gap: 0.5rem; /* İki eleman arasına boşluk */
+}
+  
+.favorite-icon {
+    cursor: pointer;
+    width: 32px;  /* Dilersen boyutları ayarlayabilirsin */
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s;
+}
+  
+.favorite-icon:hover {
+    transform: scale(1.1);
+}
+  
+.heart-icon {
+    width: 24px;
+    height: 24px;
+    stroke: #dc3545;
+    fill: none;
+    transition: fill 0.3s;
+}
+  
+.heart-icon.active {
+    fill: #dc3545;
+}
+  
+
+.paged-rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 6px;
+    font-size: 0.85rem;
+}
+
+.paged-stars {
+    display: flex;
+    gap: 2px;
+}
+
+.paged-star {
+    width: 14px;
+    height: 14px;
+    fill: #ccc;
+}
+
+.paged-star.filled {
+    fill: #f5c518;
+}

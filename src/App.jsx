@@ -6,6 +6,7 @@ import useScrollingTitle from "./hooks/useScrollingTitle";
 import Header from "./components/Header";
 import MainPage from "./pages/MainPage";
 import ProductDetail from "./pages/ProductDetail"; // Detay sayfasını sen ekleyeceksin
+import BasketPage from "./pages/BasketPage";
 import Slider from "./components/slider";
 import Category from "./components/categories";
 import PagedSlider from "./components/PagedSlider";
@@ -17,10 +18,11 @@ import BrandSlider from "./components/BrandSlider";
 import Pasaj from "./components/Pasaj";
 import Footer from "./components/Footer";
 
+
 function App() {
   const location = useLocation();
   const isProjectPage =
-    location.pathname === "http://localhost:5173/pasaj-project-turkcell/";
+    location.pathname === "/";
 
   useScrollingTitle(
     "Pasaj'da Anneler Günü Fırsatları! 🌸",
@@ -56,6 +58,7 @@ function App() {
         }
       />
       <Route path="/product/:productName" element={<ProductDetail />} />
+      <Route path="/cart" element={<BasketPage />} />
     </Routes>
   );
 }

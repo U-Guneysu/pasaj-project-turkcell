@@ -1,4 +1,5 @@
 import logo from "../assets/images/logo.png";
+import "../styles/main.css";
 
 function Header() {
   return (

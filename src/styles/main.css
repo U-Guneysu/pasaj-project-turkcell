@@ -37,7 +37,7 @@
 
 /* === NAV === */
 nav, a {
-    color: #253342;
+    color: #253342 !important;
     font-size: 13px;
     font-weight: 500;
     line-height: 20px;

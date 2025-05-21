@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/main.css";
 
 export default function MainPage() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <header className="bg-white">

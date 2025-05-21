@@ -40,105 +40,137 @@ export const sliderData = [
   },
 ];
 
-export const specialForYou = 
-  [
-      {
-        "id": 1,
-        "name": "Anker Soundcore Life P3İ Tws Anc Bluetooth Kablosuz Kulaklık",
-        "image": "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00JOCB/00JOCB-1.png",
-        "price": 3419,
-        "taksit_fatura": true,
-        "ode_fatura": true,
-        "pesin_taksit": true,
-        "aninda_teslimat": false,
-        "description": "Yüksek ses kalitesi ve aktif gürültü engelleme teknolojisi ile Anker Soundcore Life P3.",
-        "category": "Kulaklık & Ses Sistemleri"
-      },
-      {
-        "id": 2,
-        "name": "Asus ROG Gladius III Oyuncu Mouse",
-        "image": "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/Cihaz/aksesuar/asus/rog-gladius-iii-oyuncu-mouse/cg/1.png",
-        "price": 2299,
-        "taksit_fatura": false,
-        "ode_fatura": false,
-        "pesin_taksit": false,
-        "aninda_teslimat": true,
-        "description": "Asus ROG Gladius III, hassasiyet ve konforu bir arada sunan oyuncu faresi.",
-        "category": "Bilgisayar Aksesuarları"
-      },
-      {
-        "id": 3,
-        "name": "Shaza Air7 Gürültü Azaltma ENC 4 Mikrofonlu Bluetooth 5.3 TWS Kulaklık",
-        "image": "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00ERG8/20245201258-00ERG8-1.png",
-        "price": 799,
-        "taksit_fatura": true,
-        "ode_fatura": true,
-        "pesin_taksit": true,
-        "aninda_teslimat": false,
-        "description": "Bluetooth 5.3 ve ENC teknolojisi ile net görüşme imkanı sunan Shaza Air7 kulaklık.",
-        "category": "Kulaklık & Ses Sistemleri"
-      },
-      {
-        "id": 4,
-        "name": "Powertec Tr-801 Fön Makinesi",
-        "image": "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00NJ1I/20245131232-00NJ1I-1.png",
-        "price": 689,
-        "taksit_fatura": true,
-        "ode_fatura": true,
-        "pesin_taksit": true,
-        "aninda_teslimat": false,
-        "description": "Güçlü motoru ve ergonomik tasarımıyla Powertec Tr-801 saç kurutma makinesi.",
-        "category": "Kişisel Bakım & Sağlık"
-      },
-      {
-        "id": 5,
-        "name": "Crocus 22.5w 10.000 Mah PD+QC 3.0 2 usb Type-c Micro Çıkış LCD Göstergeli Powerbank",
-        "image": "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00KT8S/20241126146-00KT8S-4.png",
-        "price": 899,
-        "taksit_fatura": true,
-        "ode_fatura": true,
-        "pesin_taksit": true,
-        "aninda_teslimat": false,
-        "description": "Yüksek kapasiteli ve hızlı şarj destekli Crocus powerbank ile mobil cihazlarınız her zaman dolu.",
-        "category": "Mobil Aksesuarları"
-      },
-      {
-        "id": 6,
-        "name": "Google Play Hediye Kodu 250 TL",
-        "image": "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00F9CZ/1-1678107768950.png",
-        "price": 250,
-        "taksit_fatura": false,
-        "ode_fatura": false,
-        "pesin_taksit": false,
-        "aninda_teslimat": true,
-        "description": "Google Play Store'da dilediğiniz uygulama ve oyunları satın almanızı sağlayan hediye kodu.",
-        "category": "Dijital Ürünler & Hediye Kartları"
-      },
-      {
-        "id": 7,
-        "name": "Shaza Sesli Görüşme IP67 Nabız Ölçer 1.85 İnç Full Ekran SA8002/BK Akıllı Saat",
-        "image": "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00K672/20241120163-00K672-4.png",
-        "price": 1399,
-        "taksit_fatura": true,
-        "ode_fatura": true,
-        "pesin_taksit": true,
-        "aninda_teslimat": false,
-        "description": "Shaza SA8002 akıllı saat ile nabız ölçer, sesli görüşme ve IP67 su geçirmezlik bir arada.",
-        "category": "Akıllı Saat & Giyilebilir Teknoloji"
-      },
-      {
-        "id": 8,
-        "name": "Klas Dekoratif Aydınlatma Dikey Köşe Lambası Rgb Bar",
-        "image": "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00KGA8/00KGA8-1.png",
-        "price": 649,
-        "taksit_fatura": true,
-        "ode_fatura": true,
-        "pesin_taksit": true,
-        "aninda_teslimat": false,
-        "description": "Modern ve şık tasarımlı RGB LED ışıklar ile ortamınızı renklendirin.",
-        "category": "Ev Dekorasyonu & Aydınlatma"
-      },
-  ]
+export const specialForYou = [
+  {
+    id: 1,
+    name: "Anker Soundcore Life P3İ Tws Anc Bluetooth Kablosuz Kulaklık",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00JOCB/00JOCB-1.png",
+    price: 3419,
+    taksit_fatura: true,
+    ode_fatura: true,
+    pesin_taksit: true,
+    aninda_teslimat: false,
+    description:
+      "Yüksek ses kalitesi ve aktif gürültü engelleme teknolojisi ile Anker Soundcore Life P3.",
+    category: "Kulaklık & Ses Sistemleri",
+    puan: 4.5,
+    color: "Beyaz",
+  },
+  {
+    id: 2,
+    name: "Asus ROG Gladius III Oyuncu Mouse",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/Cihaz/aksesuar/asus/rog-gladius-iii-oyuncu-mouse/cg/1.png",
+    price: 2299,
+    taksit_fatura: false,
+    ode_fatura: false,
+    pesin_taksit: false,
+    aninda_teslimat: true,
+    description:
+      "Asus ROG Gladius III, hassasiyet ve konforu bir arada sunan oyuncu faresi.",
+    category: "Bilgisayar Aksesuarları",
+    puan: 4.2,
+    color: "Siyah",
+    color_circle_black: true,
+  },
+  {
+    id: 3,
+    name: "Shaza Air7 Gürültü Azaltma ENC 4 Mikrofonlu Bluetooth 5.3 TWS Kulaklık",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00ERG8/20245201258-00ERG8-1.png",
+    price: 799,
+    taksit_fatura: true,
+    ode_fatura: true,
+    pesin_taksit: true,
+    aninda_teslimat: false,
+    description:
+      "Bluetooth 5.3 ve ENC teknolojisi ile net görüşme imkanı sunan Shaza Air7 kulaklık.",
+    category: "Kulaklık & Ses Sistemleri",
+    puan: 3.8,
+    color: "Siyah",
+  },
+  {
+    id: 4,
+    name: "Powertec Tr-801 Fön Makinesi",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00NJ1I/20245131232-00NJ1I-1.png",
+    price: 689,
+    taksit_fatura: true,
+    ode_fatura: true,
+    pesin_taksit: true,
+    aninda_teslimat: false,
+    description:
+      "Güçlü motoru ve ergonomik tasarımıyla Powertec Tr-801 saç kurutma makinesi.",
+    category: "Kişisel Bakım & Sağlık",
+    puan: 4.1,
+    color: "Siyah",
+  },
+  {
+    id: 5,
+    name: "Crocus 22.5w 10.000 Mah PD+QC 3.0 2 usb Type-c Micro Çıkış LCD Göstergeli Powerbank",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00KT8S/20241126146-00KT8S-4.png",
+    price: 899,
+    taksit_fatura: true,
+    ode_fatura: true,
+    pesin_taksit: true,
+    aninda_teslimat: false,
+    description:
+      "Yüksek kapasiteli ve hızlı şarj destekli Crocus powerbank ile mobil cihazlarınız her zaman dolu.",
+    category: "Mobil Aksesuarları",
+    puan: 4.4,
+    color: "Siyah",
+  },
+  {
+    id: 6,
+    name: "Google Play Hediye Kodu 250 TL",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00F9CZ/1-1678107768950.png",
+    price: 250,
+    taksit_fatura: false,
+    ode_fatura: false,
+    pesin_taksit: false,
+    aninda_teslimat: true,
+    description:
+      "Google Play Store'da dilediğiniz uygulama ve oyunları satın almanızı sağlayan hediye kodu.",
+    category: "Dijital Ürünler & Hediye Kartları",
+    puan: 4.7,
+    /* color: ["Kırmızı", "Beyaz", "Sarı"], */
+  },
+  {
+    id: 7,
+    name: "Shaza Sesli Görüşme IP67 Nabız Ölçer 1.85 İnç Full Ekran SA8002/BK Akıllı Saat",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00K672/20241120163-00K672-4.png",
+    price: 1399,
+    taksit_fatura: true,
+    ode_fatura: true,
+    pesin_taksit: true,
+    aninda_teslimat: false,
+    description:
+      "Shaza SA8002 akıllı saat ile nabız ölçer, sesli görüşme ve IP67 su geçirmezlik bir arada.",
+    category: "Akıllı Saat & Giyilebilir Teknoloji",
+    puan: 4.0,
+    color: "Siyah",
+  },
+  {
+    id: 8,
+    name: "Klas Dekoratif Aydınlatma Dikey Köşe Lambası Rgb Bar",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00KGA8/00KGA8-1.png",
+    price: 649,
+    taksit_fatura: true,
+    ode_fatura: true,
+    pesin_taksit: true,
+    aninda_teslimat: false,
+    description:
+      "Modern ve şık tasarımlı RGB LED ışıklar ile ortamınızı renklendirin.",
+    category: "Ev Dekorasyonu & Aydınlatma",
+    puan: 3.9,
+    color: "Siyah",
+  },
+];
 export const bestOffers = [
     {
       id: 1,
