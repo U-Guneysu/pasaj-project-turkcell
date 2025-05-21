@@ -4,37 +4,42 @@ export const sliderData = [
     image:
       "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/Banner/Standart/Pasaj/r1-a26nb-pasaj-hero.jpg?1746873785000",
     title: "samsung-galaxy-a26",
-    description: "Slider-1",
+    description:
+      "Samsung Galaxy A26 ile üstün performans ve şık tasarım bir arada.",
   },
   {
     id: 2,
     image:
       "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/Banner/Standart/Pasaj/anneler-Gunu-Platinum-hero-banner-web.jpg?1746009674000",
     title: "platinum-indirim-ceki",
-    description: "Slider-2",
+    description:
+      "Platinum kart sahiplerine özel indirim fırsatlarını kaçırmayın.",
   },
   {
     id: 3,
     image:
       "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/Banner/Standart/Pasaj/16promass-pasaj-hero.jpg?1746599491000",
     title: "iphone-turkcellden-alinir",
-    description: "Slider-3",
+    description:
+      "iPhone modellerinde Turkcell avantajlarıyla hemen sahip olun.",
   },
   {
     id: 4,
     image:
       "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/Banner/Standart/Pasaj/Pasaj_Fomo-hero-banner-web.jpg",
     title: "pasaj-firsat",
-    description: "Slider-4",
+    description:
+      "Pasaj'da kaçırılmayacak fırsatlar ve kampanyalar sizi bekliyor.",
   },
   {
     id: 5,
     image:
       "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/Banner/Standart/Pasaj/nintendo-switch-2-hero-banner-web.jpg?1747029470000",
     title: "nintendo-switch",
-    description: "Slider-5",
+    description: "Nintendo Switch ile oyun keyfini evde ve dışarıda yaşayın.",
   },
 ];
+
 export const specialForYou = [
   {
     id: 1,
@@ -46,6 +51,8 @@ export const specialForYou = [
     ode_fatura: true,
     pesin_taksit: true,
     aninda_teslimat: false,
+    description:
+      "Yüksek ses kalitesi ve aktif gürültü engelleme teknolojisi ile Anker Soundcore Life P3.",
   },
   {
     id: 2,
@@ -57,6 +64,8 @@ export const specialForYou = [
     ode_fatura: false,
     pesin_taksit: false,
     aninda_teslimat: true,
+    description:
+      "Asus ROG Gladius III, hassasiyet ve konforu bir arada sunan oyuncu faresi.",
   },
   {
     id: 3,
@@ -68,6 +77,8 @@ export const specialForYou = [
     ode_fatura: true,
     pesin_taksit: true,
     aninda_teslimat: false,
+    description:
+      "Bluetooth 5.3 ve ENC teknolojisi ile net görüşme imkanı sunan Shaza Air7 kulaklık.",
   },
   {
     id: 4,
@@ -79,6 +90,8 @@ export const specialForYou = [
     ode_fatura: true,
     pesin_taksit: true,
     aninda_teslimat: false,
+    description:
+      "Güçlü motoru ve ergonomik tasarımıyla Powertec Tr-801 saç kurutma makinesi.",
   },
   {
     id: 5,
@@ -90,6 +103,8 @@ export const specialForYou = [
     ode_fatura: true,
     pesin_taksit: true,
     aninda_teslimat: false,
+    description:
+      "Yüksek kapasiteli ve hızlı şarj destekli Crocus powerbank ile mobil cihazlarınız her zaman dolu.",
   },
   {
     id: 6,
@@ -101,6 +116,8 @@ export const specialForYou = [
     ode_fatura: false,
     pesin_taksit: false,
     aninda_teslimat: true,
+    description:
+      "Google Play Store'da dilediğiniz uygulama ve oyunları satın almanızı sağlayan hediye kodu.",
   },
   {
     id: 7,
@@ -112,6 +129,8 @@ export const specialForYou = [
     ode_fatura: true,
     pesin_taksit: true,
     aninda_teslimat: false,
+    description:
+      "Shaza SA8002 akıllı saat ile nabız ölçer, sesli görüşme ve IP67 su geçirmezlik bir arada.",
   },
   {
     id: 8,
@@ -123,8 +142,11 @@ export const specialForYou = [
     ode_fatura: true,
     pesin_taksit: true,
     aninda_teslimat: false,
+    description:
+      "Modern ve şık tasarımlı RGB LED ışıklar ile ortamınızı renklendirin.",
   },
 ];
+
 export const bestOffers = [
   {
     id: 1,
@@ -139,6 +161,8 @@ export const bestOffers = [
     label: "Günün Teklifleri",
     labelType: "gunun-firsatlari",
     puan: 3.7,
+    description:
+      "Güçlü donanımı ve 5G teknolojisi ile Samsung Galaxy A36, hız ve performans sunar.",
   },
   {
     id: 2,
@@ -153,6 +177,8 @@ export const bestOffers = [
     label: "Çok Satan",
     labelType: "cok-satan",
     puan: 4.6,
+    description:
+      "Yüksek performans ve gelişmiş kamera özellikleriyle iPhone 13, en çok tercih edilen modellerden.",
   },
   {
     id: 3,
@@ -167,6 +193,8 @@ export const bestOffers = [
     label: "Peşin Fiyatına 9 Taksit",
     labelType: "pesin-fiyatina-dokuz-taksit",
     puan: 4.7,
+    description:
+      "Dyson Cinetic Big Ball Absolute 2, toz torbasız ve güçlü emiş performansıyla evinizi temizler.",
   },
   {
     id: 4,
@@ -179,8 +207,11 @@ export const bestOffers = [
     pesin_taksit: true,
     aninda_teslimat: false,
     puan: 5,
+    description:
+      "SJCAM SJ8 Air ile maceralarınızı yüksek çözünürlükte kaydedin, suya dayanıklı gövde ile her ortamda kullanın.",
   },
 ];
+
 export const pasajNew = [
   {
     id: 1,
@@ -189,27 +220,46 @@ export const pasajNew = [
       "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00FETS/2025241047-00FETS-2/2025241047-00FETS-2_250x188.png?1746664227000",
     price: 1299,
     puan: 4.5,
+    description:
+      "Ergonomik tasarımı ve güçlü motoruyla Powertec Tr-9900, sakal ve saç tıraşınızda kolaylık sağlar.",
   },
   {
     id: 2,
-    name: "Ogi Mogi Toys 4 Düğme Kontrollü Uzay Macerası Oyun Seti",
+    name: "Shaza IP67 Nabız Ölçer Akıllı Saat SA8003/GY",
     image:
-      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00QRVM/20241262255-00QRVM-1/20241262255-00QRVM-1_250x188.png?1746664227000",
-    price: 877.44,
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00K67J/20253141188-00K67J-1.png",
+    price: 1099,
+    puan: 4.2,
+    description:
+      "Shaza SA8003 ile nabız ölçüm, adım sayar ve IP67 su geçirmezlik özellikleri bir arada.",
   },
   {
     id: 3,
-    name: "Samsung Galaxy Tab A8 LTE SM-X207 3GB 32GB 10.5 inç Tablet",
+    name: "Shaza Air7 Gürültü Azaltma ENC 4 Mikrofonlu Bluetooth 5.3 TWS Kulaklık",
     image:
-      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00AM3M/1-1649182608723/1-1649182608723_250x188.png?1746664227000",
-    price: 6199,
-    puan: 3.1,
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00ERG8/20245201258-00ERG8-1.png",
+    price: 799,
+    puan: 4.0,
+    description:
+      "Bluetooth 5.3 teknolojisi ile Shaza Air7, net ses kalitesi ve gelişmiş gürültü engelleme sunar.",
   },
   {
     id: 4,
-    name: "Aladdin Fresco Thermavac 0.60 Litre",
+    name: "Baseus LED 4A 40W USB-C Şarj Aleti",
     image:
-      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00R9QP/2025110132-00R9QP-8/2025110132-00R9QP-8_250x188.png?1746664227000",
-    price: 649,
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00KBYM/00KBYM-2.png",
+    price: 99,
+    puan: 4.1,
+    description: "Hızlı ve güvenli şarj imkanı sunan Baseus 40W USB-C adaptör.",
+  },
+  {
+    id: 5,
+    name: "Arzum AR5050 Süpürge Robotu",
+    image:
+      "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00MH6I/20251251006-00MH6I-2.png",
+    price: 4299,
+    puan: 4.6,
+    description:
+      "Arzum AR5050, evinizi otomatik temizleyen kullanışlı süpürge robotu.",
   },
 ];

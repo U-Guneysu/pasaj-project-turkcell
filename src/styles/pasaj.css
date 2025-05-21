@@ -31,4 +31,65 @@
     background-color: #27356f; /* açık gri arka plan */
     display: flex;
 }
+
+/* ---------- RESPONSIVE MEDIA QUERIES ---------- */
+
+@media (max-width: 992px) {
+    .why-pasaj-img {
+      width: 50px;
+      height: 50px;
+    }
   
+    .icon-pictogram {
+      width: 90px;
+      height: 90px;
+    }
+  
+    .pasaj-section h3 {
+      font-size: 1.25rem;
+    }
+  
+    .pasaj-section p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .why-pasaj-img {
+      width: 44px;
+      height: 44px;
+    }
+  
+    .icon-pictogram {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .pasaj-section h3 {
+      font-size: 1.1rem;
+    }
+  
+    .pasaj-section p {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .why-pasaj-img {
+      width: 36px;
+      height: 36px;
+    }
+  
+    .icon-pictogram {
+      width: 65px;
+      height: 65px;
+    }
+  
+    .pasaj-section h3 {
+      font-size: 1rem;
+    }
+  
+    .pasaj-section p {
+      font-size: 0.8rem;
+    }
+  }

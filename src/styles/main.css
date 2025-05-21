@@ -1,110 +1,204 @@
+/* === GENEL KAPSAYICI === */
 .container-main {
-    width: 100%; /* Ekranın tamamını kapla */
-    max-width: 1200px; /* Maksimum genişlik 1200px */
-    margin: 0 auto; /* Ortalamak için otomatik kenar boşlukları */
-    padding: 0 15px; /* Sol ve sağda 15px boşluk */
-    box-sizing: border-box; /* Border ve padding'i toplam genişliğe dahil et */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
+/* === LOGO & ICON === */
 .turkcell-icon {
-    width: 30px; /* İkonun genişliği */
-    height: 30px; /* İkonun yüksekliği */
-    object-fit: contain; /* Resmin boyutlarını orantılı şekilde ayarla */
-    border-radius: 50%; /* Yuvarlak köşeler için border-radius */
-    cursor: pointer; /* Hover efekti için pointer işareti */
-    transition: transform 0.3s ease; /* Animasyon eklemek için geçiş efekti */
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .turkcell-icon:hover {
-    transform: scale(1.1); /* Hover ile ikonu biraz büyüt */
+    transform: scale(1.1);
 }
 
 .turkcell-text {
-    height: 20px; /* Yükseklik */
-    line-height: 20px; /* Satır yüksekliği ile metni dikey olarak ortala */
-    color: #8e9fad; /* Yazı rengi */
-    font-size: 13px; /* Yazı tipi boyutu */
-    font-weight: 500; /* Yazı tipi kalınlığı */
-    position: relative; /* İlerleyen stiller için konumlandırma */
-    cursor: pointer; /* Hover efekti için pointer işareti */
-    transition: color 0.3s ease; /* Yazı rengi değişimi için geçiş efekti */
+    height: 20px;
+    line-height: 20px;
+    color: #8e9fad;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 .turkcell-text:hover {
-    color: #ffcb09; /* Hover olduğunda renk değişimi */
+    color: #ffcb09;
 }
 
+/* === NAV === */
 nav, a {
     color: #253342;
     font-size: 13px;
     font-weight: 500;
     line-height: 20px;
-    transition: color 0.3s ease; /* Yazı rengi değişimi için geçiş efekti */
+    transition: color 0.3s ease;
 }
 
 nav:hover, a:hover {
-    color: #ffcb09; /* Hover olduğunda renk değişimi */
+    color: #ffcb09;
 }
 
+/* === BUTONLAR === */
 .custom-btn {
-    width: 100%;
-    height: 60px;
+    min-width: 120px;
+    height: 50px;
     border-radius: 5px;
     border: 1px solid #dee3ed;
     display: flex;
     align-items: center;
-    padding: 0 32px 0 25px;
+    padding: 0 32px;
     box-sizing: border-box;
     color: #253342;
     font-size: 16px;
     font-weight: 500;
-    position: relative;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
     margin: 0 5px;
 }
 
 .btn-basket {
     background-color: #ffcb09;
+    border-color: #ffcb09;
 }
 
 .btn-basket:hover {
     background-color: #ffcb09;
     color: #fff;
-    transition: color 0.3s ease;
 }
 
 .btn-login {
     background-color: #fff;
+    border-color: #dee3ed;
 }
 
-.btn-login:hover{
-    background-color: #fff;
-    transition: color 0.3s ease;
+.btn-login:hover {
+    background-color: #f5f7fa;
+    color: #4a90e2;
 }
 
+/* === SEARCH BAR === */
 .search-bar {
-    max-width: 100%;
-    height: 60px;
-    border-radius: 5px;
-    border: 1px solid #dee3ed;
+    width: 100%;
+    max-width: 700px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid #d1d9e6;
     display: flex;
     align-items: center;
-    padding: 0 32px 0 25px;
+    padding: 0 32px 0 20px;
     box-sizing: border-box;
     color: #253342;
     font-size: 16px;
     font-weight: 500;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    margin-left: 0;
+    outline: none;
+    padding: 10px 12px;
+    padding-right: 40px; /* ikona yer aç */
+}
+
+.search-bar:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 6px 16px rgba(74, 144, 226, 0.2);
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
     position: relative;
 }
 
-.banner{
+.search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: #888;
+    pointer-events: none; /* tıklanabilir olmasın */
+}
+
+.search-bar:focus-within {
+    border-color: #4a90e2;
+    box-shadow: 0 6px 16px rgba(74, 144, 226, 0.2);
+}
+
+
+/* === BANNER === */
+.banner {
     background-color: #002e5f;
     color: white;
     width: 100%;
     height: 50px;
-    display: flex; /* Flexbox kullanımı */
-    justify-content: center; /* Yatayda ortalama */
-    align-items: center; /* Dikeyde ortalama */
-    position: relative;
-    left: 0;
-    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* === RESPONSIVE TASARIM === */
+@media (max-width: 768px) {
+    .custom-btn {
+        font-size: 14px;
+        height: 45px;
+        padding: 0 20px;
+        margin: 5px 0;
+    }
+
+    .search-bar {
+        max-width: 100%;
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    nav {
+        display: none; /* Menü gizlenir, istersen hamburger menü ekleyebilirsin */
+    }
+
+    .turkcell-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .turkcell-text {
+        font-size: 12px;
+        margin-left: 6px;
+    }
+
+    .container-main {
+        padding: 0 10px;
+    }
+
+    .banner {
+        font-size: 14px;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Alt menüyü mobilde sütun yapalım */
+    .header-bottom .d-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header-bottom a {
+        font-size: 14px;
+    }
 }

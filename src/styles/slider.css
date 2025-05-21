@@ -92,4 +92,71 @@
     flex-direction: column;
     justify-content: space-between;
 }
-/* SLIDER KÖŞE YUMUŞATMALARI VE BOYUTLANDIRMADA KALDIM*/
+
+@media (max-width: 1024px) {
+    #customSlider {
+      max-width: 90%;
+      scale: 0.85;
+    }
+    .custom-next-icon,
+    .custom-previous-icon {
+      width: 3.5rem;
+      height: 3.5rem;
+      padding: 15px;
+    }
+    .carousel-caption .btn {
+      left: -60px;
+      bottom: 70px;
+      padding: 15px 70px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #customSlider {
+      max-width: 100%;
+      scale: 0.8;
+      padding: 3px;
+    }
+    .custom-next-icon,
+    .custom-previous-icon {
+      width: 3rem;
+      height: 3rem;
+      padding: 12px;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 10%;
+    }
+    .carousel-caption .btn {
+      left: auto;
+      right: 10px;
+      bottom: 50px;
+      padding: 12px 50px;
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #customSlider {
+      scale: 0.75;
+      padding: 2px;
+    }
+    .custom-next-icon,
+    .custom-previous-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      padding: 10px;
+    }
+    .carousel-caption .btn {
+      bottom: 40px;
+      padding: 10px 30px;
+      font-size: 12px;
+      left: auto;
+      right: 5px;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 15%;
+    }
+  }

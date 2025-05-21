@@ -7,7 +7,7 @@ import App from "./App.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/pasaj-project-turkcell">
       <App />
     </BrowserRouter>
   </StrictMode>
