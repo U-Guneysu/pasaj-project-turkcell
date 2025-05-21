@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
-import { useLocation, BrowserRouter } from "react-router-dom";
+import { useLocation, Routes, Route } from "react-router-dom";
 import useScrollingTitle from "./hooks/useScrollingTitle";
+
+// Sayfalar ve bileşenler
+import Header from "./components/Header";
 import MainPage from "./pages/MainPage";
+import ProductDetail from "./pages/ProductDetail"; // Detay sayfasını sen ekleyeceksin
 import Slider from "./components/slider";
 import Category from "./components/categories";
 import PagedSlider from "./components/PagedSlider";
@@ -18,7 +22,11 @@ function App() {
   const isProjectPage =
     location.pathname === "http://localhost:5173/pasaj-project-turkcell/";
 
-  useScrollingTitle("Pasaj'da Anneler Günü Fırsatları! 🌸", 200, !isProjectPage);
+  useScrollingTitle(
+    "Pasaj'da Anneler Günü Fırsatları! 🌸",
+    200,
+    !isProjectPage
+  );
 
   useEffect(() => {
     if (isProjectPage) {
@@ -27,19 +35,28 @@ function App() {
   }, [isProjectPage]);
 
   return (
-    <>
-      <MainPage />
-      <Slider />
-      <Category />
-      <PagedSlider title="Size Özel Ürünler" products={specialForYou} />
-      <PagedSlider title="En İyi Teklifler" products={bestOffers} />
-      <Campaings campaings={campaingData} />
-      <CategorySwiper />
-      <BrandSlider />
-      <PagedSlider title="Pasaj'ın Yenileri" products={pasajNew} />
-      <Pasaj />
-      <Footer />
-    </>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <>
+            <Header />
+            <MainPage />
+            <Slider />
+            <Category />
+            <PagedSlider title="Size Özel Ürünler" products={specialForYou} />
+            <PagedSlider title="En İyi Teklifler" products={bestOffers} />
+            <Campaings campaings={campaingData} />
+            <CategorySwiper />
+            <BrandSlider />
+            <PagedSlider title="Pasaj'ın Yenileri" products={pasajNew} />
+            <Pasaj />
+            <Footer />
+          </>
+        }
+      />
+      <Route path="/product/:productName" element={<ProductDetail />} />
+    </Routes>
   );
 }
 
