@@ -123,6 +123,7 @@ const PagedSlider = ({ title, products = [], categoryFilter = null }) => {
                                   <span
                                     style={{
                                       marginLeft: "8px",
+                                      marginTop: "-3px",
                                       fontSize: "0.75rem",
                                     }}
                                   >
@@ -156,7 +157,7 @@ const PagedSlider = ({ title, products = [], categoryFilter = null }) => {
                             <div className="card-divider"></div>
                             <div className="price-wrapper">
                               <span className="price-amount">
-                                {product.price}
+                                {Number(product.price).toLocaleString("tr-TR")}
                               </span>
                               <span className="price-currency">TL</span>
                             </div>

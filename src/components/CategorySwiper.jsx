@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/swiper.css";
 import "../styles/section.css";
 import "../styles/main.css";
 import { categorySliderData } from "../data/categorySliderData";
 
 const CategorySwiper = () => {
+  const navigate = useNavigate();
+
   const [selectedCategory, setSelectedCategory] = useState(
     categorySliderData[0]
   );
@@ -14,6 +17,11 @@ const CategorySwiper = () => {
     setFavorites((prev) =>
       prev.includes(id) ? prev.filter((f) => f !== id) : [...prev, id]
     );
+  };
+
+  // Dinamik parametre ile ürün detay sayfasına git
+  const goToProductDetail = (productName) => {
+    navigate(`/product/${productName}`);
   };
 
   return (
@@ -51,8 +59,12 @@ const CategorySwiper = () => {
         {/* Ürün Grid'i */}
         <div className="product-grid">
           {selectedCategory.products.slice(0, 8).map((product) => (
-            <div key={product.id} className="product-card position-relative">
-              {/* Etiket */}
+            <div
+              key={product.id}
+              className="product-card position-relative"
+              style={{ cursor: "pointer" }}
+              onClick={() => goToProductDetail(product.name)}
+            >
               {product.label && (
                 <span
                   className={`paged-product-label badge position-absolute ${product.labelType}`}
@@ -61,10 +73,13 @@ const CategorySwiper = () => {
                   {product.label}
                 </span>
               )}
-              {/* Favori simgesi */}
+
               <div
                 className="favorite-icon"
-                onClick={() => toggleFavorite(product.id)}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleFavorite(product.name);
+                }}
                 style={{
                   position: "absolute",
                   top: 8,
@@ -74,12 +89,12 @@ const CategorySwiper = () => {
               >
                 <svg
                   className={`heart-icon ${
-                    favorites.includes(product.id) ? "active" : ""
+                    favorites.includes(product.name) ? "active" : ""
                   }`}
                   viewBox="0 0 24 24"
                   width="20"
                   height="20"
-                  fill={favorites.includes(product.id) ? "red" : "none"}
+                  fill={favorites.includes(product.name) ? "red" : "none"}
                   stroke="currentColor"
                   strokeWidth="2"
                   strokeLinecap="round"
@@ -89,14 +104,12 @@ const CategorySwiper = () => {
                 </svg>
               </div>
 
-              {/* Görsel */}
               <img
                 className="product-info"
                 src={product.image}
                 alt={product.name}
               />
 
-              {/* Ürün Bilgisi */}
               <h5>{product.name}</h5>
               <div className="product-tags d-flex flex-wrap gap-1 mb-2">
                 {product.cok_satan && (
@@ -114,7 +127,6 @@ const CategorySwiper = () => {
               </div>
               <p>{product.price.toLocaleString("tr-TR")} TL</p>
 
-              {/* Puan (Yıldızlar) */}
               {typeof product.puan === "number" && (
                 <div className="paged-rating">
                   <div

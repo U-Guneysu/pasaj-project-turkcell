@@ -13,7 +13,7 @@ const Slider = () => {
         data-bs-ride="carousel"
         data-bs-touch="true"
       >
-        {/* Slide Items */}
+        {/* Slider */}
         <div className="carousel-inner">
           {sliderData.map((slide, index) => (
             <div
@@ -34,7 +34,7 @@ const Slider = () => {
           ))}
         </div>
 
-        {/* Indicators */}
+        {/* İndikatörler */}
         <div className="carousel-indicators custom-slider-btn">
           {sliderData.map((_, index) => (
             <button
@@ -48,7 +48,7 @@ const Slider = () => {
           ))}
         </div>
 
-        {/* Navigation Buttons */}
+        {/* Nav */}
         <button
           className="carousel-control-prev"
           type="button"

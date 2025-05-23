@@ -45,7 +45,7 @@
   letter-spacing: 0.3px;
 }
 
-/* RESPONSIVE MEDIA QUERIES */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .category-container .category-item {
     width: 90px;

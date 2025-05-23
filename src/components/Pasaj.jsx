@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/pasaj.css";
 
-const WhyPasaj = () => {
+const Pasaj = () => {
   const features = [
     {
       image: (
@@ -78,7 +78,7 @@ const WhyPasaj = () => {
         <div className="row justify-content-center">
           {features.map((item, index) => (
             <div className="col-md-4 mb-4" key={index}>
-              <div className="why-pasaj-card p-4 h-100">
+              <div className="pasaj-card p-4 h-100">
                 <div
                   className="icon-pictogram mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle"
                   style={{ width: "70px", height: "70px", padding: "10px"  }}
@@ -96,5 +96,4 @@ const WhyPasaj = () => {
   );
 };
 
-export default WhyPasaj;
-/* İSİM DEĞİŞİKLİĞİ YAPILACAK */
+export default Pasaj;

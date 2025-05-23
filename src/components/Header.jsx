@@ -1,7 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import "../styles/main.css";
 
 function Header() {
+
+  const navigate = useNavigate();
+
   return (
     <div className="container-main">
       {/* Top Bar */}
@@ -107,7 +111,11 @@ function Header() {
               Giriş Yap
             </button>
 
-            <button className="custom-btn btn-basket" type="button">
+            <button
+              className="custom-btn btn-basket"
+              type="button"
+              onClick={() => navigate("/basket")}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="size-6 me-2"

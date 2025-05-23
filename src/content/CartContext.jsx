@@ -12,10 +12,12 @@ export const CartProvider = ({ children }) => {
     setCartItems((prev) => [...prev, product]);
   };
 
-  // Sepetten çıkar (isteğe bağlı)
+  // Sepetten çıkar 
   const removeFromCart = (productId) => {
     setCartItems((prev) => prev.filter((item) => item.id !== productId));
   };
+
+  // Tümünü Kaldır Buttonu Gelecek
 
   return (
     <CartContext.Provider value={{ cartItems, addToCart, removeFromCart }}>

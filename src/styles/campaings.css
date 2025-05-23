@@ -23,8 +23,8 @@
     gap: 1rem;
   }
 }
-  
-  /* Çok küçük ekranlar için (mobil) */
+
+
 @media (max-width: 480px) {
   .campaing-wrapper {
     gap: 0.75rem;

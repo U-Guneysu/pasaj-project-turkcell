@@ -58,7 +58,7 @@ function App() {
         }
       />
       <Route path="/product/:productName" element={<ProductDetail />} />
-      <Route path="/cart" element={<BasketPage />} />
+      <Route path="/basket" element={<BasketPage />} />
     </Routes>
   );
 }

@@ -103,7 +103,7 @@
   gap: 20px;
 }
 .footer-languages a {
-  color: #f1f1f1;
+  color: #f1f1f1 !important;
   text-decoration: none;
   padding-bottom: 5px;
   position: relative;
@@ -131,7 +131,7 @@
   color: #ffcb09;
 }
 
-/* RESPONSIVE MEDIA QUERIES */
+/* RESPONSIVE */
 
 @media (max-width: 1024px) {
   .footer-column {
